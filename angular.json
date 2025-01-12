@@ -126,6 +126,16 @@
           }
         }
       }
+    },
+    "personal-website-2020": {
+      "architect": {
+        "build": {
+          "options": {
+            "outputPath": "dist",
+            "baseHref": "/ProjectArchive/personal-website-2020/"
+          }
+        }
+      }
     }
   },
   "defaultProject": "suryakantamangaraj.github.io",
