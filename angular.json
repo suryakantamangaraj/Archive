@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "SuryaRaj": {
+    "personal-website-2020": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -18,21 +18,26 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/personal-website-2020",
+            "baseHref": "/ProjectArchive/personal-website-2020/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/sitemap.xml"
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
             ],
             "scripts": [],
-            "baseHref": "/personal-website-2020/"
+            "aot": true,
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -45,7 +50,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -68,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "suryakantamangaraj.github.io:build"
+            "browserTarget": "personal-website-2020:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "suryakantamangaraj.github.io:build:production"
+              "browserTarget": "personal-website-2020:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "suryakantamangaraj.github.io:build"
+            "browserTarget": "personal-website-2020:build"
           }
         },
         "test": {
@@ -91,8 +95,7 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/sitemap.xml"
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
@@ -100,46 +103,20 @@
             "scripts": []
           }
         },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "suryakantamangaraj.github.io:serve"
+            "devServerTarget": "personal-website-2020:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "suryakantamangaraj.github.io:serve:production"
+              "devServerTarget": "personal-website-2020:serve:production"
             }
-          }
-        }
-      }
-    },
-    "personal-website-2020": {
-      "architect": {
-        "build": {
-          "options": {
-            "outputPath": "dist",
-            "baseHref": "/ProjectArchive/personal-website-2020/"
           }
         }
       }
     }
   },
-  "defaultProject": "suryakantamangaraj.github.io",
-  "cli": {
-    "analytics": false
-  }
+  "defaultProject": "personal-website-2020"
 }
