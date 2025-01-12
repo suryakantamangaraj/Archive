@@ -19,6 +19,7 @@
           "options": {
             "outputPath": "dist/personal-website-2020",
             "baseHref": "/ProjectArchive/personal-website-2020/",
+            "deployUrl": "/ProjectArchive/personal-website-2020/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
