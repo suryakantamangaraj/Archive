@@ -1,0 +1,45 @@
+<div class="overlay"></div>
+<div class="root-container">
+  <div class="navbar">
+    <div class="nav-items">
+      <a [routerLink]="['/portfolio']" class="nav-item">Portfolio</a>
+      <a [routerLink]="['/about']" class="nav-item">About</a>
+      <a [routerLink]="['/profiles']" class="nav-item">Profiles</a>
+      <a href="https://blog.suryaraj.me" class="nav-item">Blog</a>
+      <a href="https://wiki.suryaraj.me/" class="nav-item">Wiki</a>
+      <div class="dropdown">
+        <a class="nav-item dropbtn">Misc</a>
+        <div class="dropdown-content">
+          <a href="https://suryaraj.me/Tools">Tools</a>
+          <a href="https://suryaraj.me/Mathematics">MathNotes</a>
+        </div>
+      </div>      
+    </div>
+  </div>
+
+  <div class="container">
+    <app-dp-logo class="dp-logo"></app-dp-logo>
+    <h4 class="short-bio">Designer | Developer | Mentor</h4>
+
+    <q class="quote">Solving problems through Logic and Code.</q>
+    <div class="name">
+      <p>
+        SURYA RAJ
+      </p>
+      <div class="strip"></div>
+    </div>
+
+    <span (click)="onExploreMeClick()" (mouseover)="startTadaAnimation = false" [ngClass]="{'tada-animation':startTadaAnimation}">
+      <button class="special-btn">
+        <span>
+          Explore Me
+        </span>
+      </button>
+    </span>
+
+    <div class="stick">
+      <div class="stick-design"></div>
+    </div>
+  </div>
+
+</div>

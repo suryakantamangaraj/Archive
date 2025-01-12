@@ -1,39 +1,29 @@
-# ProjectArchive
+# Surya Raj [Personal Website](https://www.suryakantamangaraj.github.io/)
 
-## Description
-A comprehensive archive of old projects and websites, showcasing their evolution and historical significance. This repository serves as a live collection to preserve and celebrate past work.
+## Project Info
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Projects](#projects)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
-## Introduction
-Welcome to the ProjectArchive! This repository serves as a comprehensive archive for old projects and websites, showcasing their evolution and historical significance. By preserving and celebrating past work, we aim to keep the creativity and innovation of earlier times alive.
+## Development server
 
-## Projects
-Here is a list of the projects and websites included in this archive:
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-1. **Project Name**: Brief description and significance.
-2. **Project Name**: Brief description and significance.
-3. **Project Name**: Brief description and significance.
+## Code scaffolding
 
-*Add more projects as needed.*
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Usage
-Feel free to explore the projects and websites in this repository. Each project folder contains relevant files, documentation, and additional information about its history and development.
+## Build
 
-## Contributing
-We welcome contributions to the ProjectArchive! If you have old projects or websites that you would like to include in this archive, please follow these steps:
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-1. Fork the repository.
-2. Create a new branch for your project: `git checkout -b your-project-name`.
-3. Add your project files to the appropriate folder.
-4. Commit your changes: `git commit -m 'Add your project name'`.
-5. Push to the branch: `git push origin your-project-name`.
-6. Create a pull request.
+## Running unit tests
 
-## License
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
