@@ -1,12 +1,12 @@
 export const projectsData = [
     {
         id: 1,
-        title: "RetroOS",
-        description: "A vintage operating system simulator",
+        title: "Personal Website",
+        description: "Personal website built with Angular.",
         status: "archived",
-        link: "https://github.com/example/retro-os",
-        date: "2019",
-        tags: ["C++", "Assembly"]
+        link: "https://archive.suryaraj.me/personal-website-2020/",
+        date: "2025",
+        tags: ["Angular", "Assembly"]
     },
     {
         id: 2,
