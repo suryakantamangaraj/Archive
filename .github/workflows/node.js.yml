@@ -25,6 +25,13 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+
+    - name: Clear Cache
+      run: |
+        rm -rf node_modules
+        rm -rf dist
+        yarn cache clean
+        
     - run: yarn install
     - run: yarn build
 
