@@ -18,8 +18,8 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/personal-website-2020",
-            "baseHref": "/Archive/personal-website-2020/",
-            "deployUrl": "/Archive/personal-website-2020/",
+            "baseHref": "/personal-website-2020/",
+            "deployUrl": "/personal-website-2020/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
