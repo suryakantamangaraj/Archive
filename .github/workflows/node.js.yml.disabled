@@ -5,7 +5,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "personal-website-2020-dev" ]
+    branches: [ "personal-website-2020-archived" ]
   pull_request:
     branches: [ "main" ]
 
