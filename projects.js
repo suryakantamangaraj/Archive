@@ -4,7 +4,7 @@ export const projectsData = [
         title: "Personal Website",
         description: "Personal website built with Angular.",
         status: "archived",
-        link: "https://archive.suryaraj.me/personal-website-2020/",
+        link: "https://archive.suryaraj.com/personal-website-2020/",
         date: "2025",
         tags: ["Angular", "Assembly"]
     },
@@ -81,7 +81,7 @@ export const projectsData = [
         tags: ["Node.js", "React"]
     },
     {
-        id:11,
+        id: 11,
         title: "Terminal Blog",
         description: "Command-line style blog platform",
         status: "archived",
