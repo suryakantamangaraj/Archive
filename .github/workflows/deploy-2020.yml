@@ -1,0 +1,35 @@
+name: Deploy Angular 2020 Archive
+on:
+  push:
+    branches:
+      - src/personal-website-2020
+
+permissions:
+  contents: write
+
+jobs:
+  build_and_deploy:
+    if: false # 🚨 SET TO TRUE TO ENABLE AUTOMATIC DEPLOYMENT
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '12' # Matching your 2020 project version
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Angular App
+        run: npm run build
+
+      - name: Deploy to Main Branch Subdirectory
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: main
+          folder: dist/personal-website-2020
+          target-folder: personal-website-2020
+          clean: false
