@@ -23,7 +23,11 @@ jobs:
         run: npm install
 
       - name: Build Angular App
-        run: npm run build
+        run: |
+          npx ng run SuryaRaj:prerender --base-href /personal-website-2025/
+          node scripts/generate-sitemap.js
+          cp dist/SuryaRaj/browser/index.html dist/SuryaRaj/browser/404.html
+
 
       - name: Deploy to Main Branch Subdirectory
         uses: JamesIves/github-pages-deploy-action@v4
