@@ -1,0 +1,40 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ "prod-develop" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [24.x]  # Updated Node version for Angular 21 requirements
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'yarn'
+    
+    - name: Install dependencies
+      run: |
+        yarn install --ignore-engines
+    
+    - name: Build
+      run: |
+        yarn build --configuration production
+        cp dist/SuryaRaj/browser/404/index.html dist/SuryaRaj/browser/404.html || cp src/404.html dist/SuryaRaj/browser/404.html || true
+    
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: master  # Target branch
+        folder: dist/SuryaRaj/browser    # Build output folder
+        clean: true    # Remove old files before deploying

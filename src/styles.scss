@@ -1,0 +1,97 @@
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Open+Sans:300i,300|Lato');
+@import './app/variables';
+@import './app/mixins';
+
+// Root settings
+:root {
+  @include mobile {
+    font-size: $font-size-small;
+  }
+
+  @include tablet {
+    font-size: $font-size-medium;
+  }
+
+  @include desktop {
+    font-size: $font-size-large;
+  }
+}
+
+// Global resets
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Base elements
+html,
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: $bg-color;
+  color: $text-color;
+  overflow-x: hidden;
+}
+
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: $spacing-medium;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+  @include transition;
+
+  &:hover {
+    color: $color1;
+  }
+}
+
+// Global utilities
+.container {
+  @include container;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}
+
+// Screen reader only (for SEO and accessibility)
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
