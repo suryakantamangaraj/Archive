@@ -24,7 +24,7 @@ jobs:
 
       - name: Build Angular App
         run: |
-          npx ng run SuryaRaj:prerender --base-href /personal-website-2025/
+          npx ng run SuryaRaj:prerender -- --base-href /personal-website-2025/
           node scripts/generate-sitemap.js
           cp dist/SuryaRaj/browser/index.html dist/SuryaRaj/browser/404.html
 
