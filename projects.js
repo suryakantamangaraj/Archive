@@ -16,7 +16,7 @@ export const projectsData = [
         link: "https://archive.suryaraj.com/SmartFarming/",
         date: "2022",
         tags: ["HTML", "CSS", "JavaScript", "EDGE AI", "IoT"]
-    }
+    },
     {
         id: 12,
         title: "Personal Website (2025)",

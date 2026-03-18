@@ -1,0 +1,33 @@
+# Surya Raj - Project Archives
+
+This is the project archive of Surya Raj.
+URL: https://archive.suryaraj.com/
+
+## About
+This website serves as a repository for past, deprecated, or discontinued projects. It uses a modern retro terminal theme. It's essentially a catalog of older codebases and web experiments that Surya wants to preserve.
+
+## Projects
+
+### 1. Personal Website (2020)
+- **URL**: https://archive.suryaraj.com/personal-website-2020/
+- **Technologies**: Angular, TypeScript, SCSS
+- **Status**: Archived
+- **Year**: 2020
+- **Description**: Personal website built with Angular.
+
+### 2. Smart Farming
+- **URL**: https://archive.suryaraj.com/SmartFarming/
+- **Technologies**: HTML, CSS, JavaScript, EDGE AI, IoT
+- **Status**: Deprecated
+- **Year**: 2022
+- **Description**: Precision smart agriculture using EDGE AI and Intelligence Cloud.
+
+### 3. Personal Website (2025)
+- **URL**: https://archive.suryaraj.com/personal-website-2025/
+- **Technologies**: Angular, SSR, TypeScript
+- **Status**: Archived
+- **Year**: 2025
+- **Description**: Modern portfolio with Angular SSR and Prerendering.
+
+## Main Site
+Surya Raj's main website is available at: https://suryaraj.com
