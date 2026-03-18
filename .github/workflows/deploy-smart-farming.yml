@@ -1,0 +1,21 @@
+name: Deploy Smart Farming
+
+on:
+  push:
+    branches:
+      - src/smart-farming-source
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy to Main Branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: main
+          folder: .
+          target-folder: SmartFarming
+          clean: false
