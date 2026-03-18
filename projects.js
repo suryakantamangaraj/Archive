@@ -16,5 +16,14 @@ export const projectsData = [
         link: "https://archive.suryaraj.com/personal-website-2025/",
         date: "2025",
         tags: ["Angular", "SSR", "TypeScript"]
+    },
+    {
+        id: 2,
+        title: "Smart Farming",
+        description: "Precision smart agriculture using EDGE AI and Intelligence Cloud.",
+        status: "deprecated",
+        link: "https://archive.suryaraj.com/SmartFarming/",
+        date: "2022",
+        tags: ["HTML", "CSS", "JavaScript", "EDGE AI", "IoT"]
     }
 ];
