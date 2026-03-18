@@ -36,33 +36,6 @@ export const projectsData = [
         tags: ["JavaScript", "Web Audio"]
     },
     {
-        id: 7,
-        title: "RetroOS",
-        description: "A vintage operating system simulator",
-        status: "archived",
-        link: "https://github.com/example/retro-os",
-        date: "2019",
-        tags: ["C++", "Assembly"]
-    },
-    {
-        id: 8,
-        title: "VintageDB",
-        description: "Database system with retro terminal interface",
-        status: "deprecated",
-        link: "https://github.com/example/vintagedb",
-        date: "2020",
-        tags: ["Python", "SQL"]
-    },
-    {
-        id: 9,
-        title: "8-Bit Synth",
-        description: "Vintage synthesizer emulator",
-        status: "archived",
-        link: "https://github.com/example/8bit-synth",
-        date: "2018",
-        tags: ["JavaScript", "Web Audio"]
-    },
-    {
         id: 4,
         title: "DOS Game Collection",
         description: "Collection of classic DOS games",
@@ -81,24 +54,6 @@ export const projectsData = [
         tags: ["Node.js", "React"]
     },
     {
-        id: 10,
-        title: "Terminal Blog",
-        description: "Command-line style blog platform",
-        status: "archived",
-        link: "https://github.com/example/terminal-blog",
-        date: "2022",
-        tags: ["Node.js", "React"]
-    },
-    {
-        id: 11,
-        title: "Terminal Blog",
-        description: "Command-line style blog platform",
-        status: "archived",
-        link: "https://github.com/example/terminal-blog",
-        date: "2022",
-        tags: ["Node.js", "React"]
-    },
-    {
         id: 6,
         title: "Retro Chat",
         description: "IRC-style chat application",
@@ -106,5 +61,14 @@ export const projectsData = [
         link: "https://github.com/example/retro-chat",
         date: "2021",
         tags: ["WebSocket", "Vue.js"]
+    },
+    {
+        id: 7,
+        title: "RetroOS",
+        description: "A vintage operating system simulator",
+        status: "archived",
+        link: "https://github.com/example/retro-os",
+        date: "2019",
+        tags: ["C++", "Assembly"]
     }
 ];
