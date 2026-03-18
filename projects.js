@@ -6,7 +6,7 @@ export const projectsData = [
         status: "archived",
         link: "https://archive.suryaraj.com/personal-website-2020/",
         date: "2020",
-        tags: ["Angular", "Assembly"]
+        tags: ["Angular", "TypeScript", "SCSS"]
     },
     {
         id: 12,
