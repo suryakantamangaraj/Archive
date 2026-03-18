@@ -18,6 +18,8 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/SuryaRaj/browser",
+            "baseHref": "/personal-website-2025/",
+            "deployUrl": "/personal-website-2025/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
